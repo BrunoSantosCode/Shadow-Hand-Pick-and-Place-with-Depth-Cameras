@@ -10,6 +10,10 @@ The project leverages depth cameras (RealSense and ZED) to control the Shadow De
  - **Cameras**: RealSense D456, ZED v1
  - **Development Environment**: ROS, Docker
 
+### 🎥 Watch the Robots in Action
+ To see the real robots performing the pick-and-place task, check out the **YouTube demo video**:  
+ [Watch the video here](https://youtu.be/iXZW1xC6DWg)
+
 ## 🗂️ Folder Structure
  - **[`Camera_Docker`](Camera_Docker)**: Contains files and instructions to configure the Camera Docker Container for the cameras integration.
  - **[`pick_n_place`](pick_n_plcae)**: ROS package for controlling the Shadow Hand and UR5. This package should be placed in the Shadow Hand docker container at `/home/user/projects/shadow_robot/base/src`.
@@ -66,6 +70,9 @@ Follow these steps to run the pick-and-place system using the **RealSense** came
 To run the system with the **ZED** camera, follow the same steps as for RealSense but replace the scripts:
  - Replace `pick_n_place_rs.py` by `pick_n_place_zed.py`
  - Replace `acquire_pos_rs.py` by `acquire_pos_zed.py`
+
+## 📄 Research Paper
+A detailed explanation of the project, methodologies, and results will be available in an upcoming paper, which is currently TO BE PUBLISHED. Stay tuned for updates!
     
 ## 📫 Contact
 
