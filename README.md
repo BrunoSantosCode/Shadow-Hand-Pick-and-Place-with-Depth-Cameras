@@ -31,7 +31,7 @@ The project leverages depth cameras (RealSense and ZED) to control the Shadow De
 
 ## 🚀 How to Run
 
-### 🟢 Running with RealSense
+### 🔵 Running with RealSense
 Follow these steps to run the pick-and-place system using the **RealSense** camera:
 
 1. Turn on the Robots
@@ -65,7 +65,7 @@ Follow these steps to run the pick-and-place system using the **RealSense** came
       roslaunch camera acquire_pos_rs.launch
     ```
     
-### 🟣 Running with ZED
+### 🟢 Running with ZED
 
 To run the system with the **ZED** camera, follow the same steps as for RealSense but replace the scripts:
  - Replace `pick_n_place_rs.py` by `pick_n_place_zed.py`
