@@ -11,7 +11,7 @@ The project leverages depth cameras (RealSense and ZED) to control the Shadow De
  - **Development Environment**: ROS, Docker
 
 ## 🗂️ Folder Structure
- - **[`Camera_Docker`](Camera_Docker)**: Contains files and instructions to configure the CAMERA docker container for the cameras integration.
+ - **[`Camera_Docker`](Camera_Docker)**: Contains files and instructions to configure the Camera Docker Container for the cameras integration.
  - **[`pick_n_place`](pick_n_plcae)**: ROS package for controlling the Shadow Hand and UR5. This package should be placed in the Shadow Hand docker container at `/home/user/projects/shadow_robot/base/src`.
  - **[`camera`](camera)**: ROS package for acquiring images from the cameras, to be used inside the CAMERA docker container, located at `/root/catkin_ws/src`.
 
