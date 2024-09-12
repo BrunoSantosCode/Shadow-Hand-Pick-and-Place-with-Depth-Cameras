@@ -1,26 +1,41 @@
-# Shadow Dexterous Hand: Optimising Pick and Place with Depth Cameras
+# 🦾 Shadow Dexterous Hand: Optimising Pick and Place with Depth Cameras
 
-This repository contains the code developed in order to integrate a Shadow Hand coupled to a UR5 in the factory, for the purpose of re-feeding the production line.
+This repository contains the code developed in order to integrate a Shadow Hand coupled to a UR5 in the FESTO demonstration factory, for the purpose of re-feeding the production line.
 
-📝 Note: The code was developed in Python using Robotic Operating System (ROS).
+## 📌 Project Overview
+The project leverages depth cameras (RealSense and ZED) to control the Shadow Dexterous Hand and UR5 arm for pick-and-place operations. This repository provides the code necessary to set up, control, and monitor the system using **Python** and the **Robotic Operating System (ROS)**.
 
-The `ZED_Docker` folder contains the necessary files and instructions to get the ZED docker container, containing the code to use the ZED camera.
+ - **Robotic Hand**: Shadow Dexterous Hand
+ - **Robot Arm**: UR5 (Universal Robots)
+ - **Cameras**: RealSense D456, ZED v1
+ - **Development Environment**: ROS, Docker
 
-The `pick_n_place` folder is a ROS package responsible for the Sahdow Hand and UR5 arm control and should be placed inside the Shadow Hand docker container, specifically at `/home/user/projects/shadow_robot/base/src`.
+## 🗂️ Folder Structure
+ - **`ZED_Docker/`**: Contains files and instructions to configure the ZED docker container for the ZED camera integration.
+ - **`pick_n_place/`**: ROS package for controlling the Shadow Hand and UR5. This package should be placed in the Shadow Hand docker container at `/home/user/projects/shadow_robot/base/src`.
+ - **`camera/`**: ROS package for acquiring images from the ZED camera, to be used inside the ZED docker container, located at `/root/catkin_ws/src`.
 
-The `camera` folder is a ROS package responsible for the ZED camera image acquisiton and should be placed inside the ZED docker container, specifically at `/root/catkin_ws/src`.
- 
-Software description:
-  - [`acquire_pos_rs.py`](camera/src/acquire_pos_rs.py) - utilises RealSense camera to acquire the position (x,y,z) of the factory and of object to be grabbed by Shadow Hand in `rs_camera` coordinates and publishes this position to `'obj_pos'` ROS topic;
-  - [`acquire_pos_zed.py`](camera/src/acquire_pos_zed.py) - utilises ZED camera to acquire the position (x,y,z) of the factory and of object to be grabbed by Shadow Hand in `zed_camera` coordinates and publishes this position to `'obj_pos'` ROS topic;
-  - [`pick_n_place_rs.py`](pick_n_place/src/pick_n_place_rs.py) - control the Shadow Hand and UR5 arm in order to perform the pick and place task based on the pick and place object positions (use with RealSense camera).
-  - [`pick_n_place_zed.py`](pick_n_place/src/pick_n_place_zed.py) - control the Shadow Hand and UR5 arm in order to perform the pick and place task based on the pick and place object positions (use with ZED camera).
-
-## How to run (RealSense)
-
-1. Turn on the robots
+## ⚙️ Software Description
+ - [`acquire_pos_rs.py`](camera/src/acquire_pos_rs.py)  
+   Uses the **RealSense** camera to acquire the position (x, y, z) of the object and the factory area. Publishes the position to the `'obj_pos'` ROS topic.
    
-   ⚠️ Don't forget to set Shadow's NUC ip!
+ - [`acquire_pos_zed.py`](camera/src/acquire_pos_zed.py)  
+   Uses the **ZED** camera to acquire the position (x, y, z) of the object and factory. Publishes the position to the `'obj_pos'` ROS topic.
+   
+ - [`pick_n_place_rs.py`](pick_n_place/src/pick_n_place_rs.py)  
+   Controls the Shadow Hand and UR5 arm to perform pick-and-place operations based on the **RealSense** camera's object position.
+ 
+ - [`pick_n_place_zed.py`](pick_n_place/src/pick_n_place_zed.py)  
+   Controls the Shadow Hand and UR5 arm to perform pick-and-place operations using the **ZED** camera's object position.
+
+
+## 🚀 How to Run
+
+### 🟢 Running with RealSense
+Follow these steps to run the pick-and-place system using the **RealSense** camera:
+
+1. Turn on the Robots
+   ⚠️ Ensure that the Shadow Hand’s NUC IP is correctly set.
    
 2. Execute `Launch Shadow Right Hand and Arm.desktop`
 
@@ -50,10 +65,11 @@ Software description:
       roslaunch camera acquire_pos_rs.launch
     ```
     
-## How to run (ZED)
+### 🟣 Running with ZED
 
-Follow the RealSense tutorial replacing `pick_n_place_rs.py` by `pick_n_place_zed.py` and `acquire_pos_rs.py` by `acquire_pos_zed.py`.
-
+To run the system with the **ZED** camera, follow the same steps as for RealSense but replace the scripts:
+ - Replace `pick_n_place_rs.py` by `pick_n_place_zed.py`
+ - Replace `acquire_pos_rs.py` by `acquire_pos_zed.py`
     
 ## 📫 Contact
 
