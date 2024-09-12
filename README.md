@@ -1,6 +1,6 @@
 # 🦾 Shadow Dexterous Hand: Optimising Pick and Place with Depth Cameras
 
-This repository contains the code developed in order to integrate a Shadow Hand coupled to a UR5 in the FESTO demonstration factory, for the purpose of re-feeding the production line.
+This repository contains the code developed in order to integrate a Shadow Hand coupled to a UR5 in the FESTO Modular Production System, for the purpose of re-feeding the production line.
 
 ## 📌 Project Overview
 The project leverages depth cameras (RealSense and ZED) to control the Shadow Dexterous Hand and UR5 arm for pick-and-place operations. This repository provides the code necessary to set up, control, and monitor the system using **Python** and the **Robotic Operating System (ROS)**.
