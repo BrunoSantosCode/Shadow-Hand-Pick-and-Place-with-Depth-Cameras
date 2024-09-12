@@ -16,17 +16,13 @@ The project leverages depth cameras (RealSense and ZED) to control the Shadow De
  - **[`camera`](camera)**: ROS package for acquiring images from the cameras, to be used inside the CAMERA docker container, located at `/root/catkin_ws/src`.
 
 ## ⚙️ Software Description
- - [`acquire_pos_rs.py`](camera/src/acquire_pos_rs.py)  
-   Uses the **RealSense** camera to acquire the position (x, y, z) of the object and the factory area. Publishes the position to the `'obj_pos'` ROS topic.
+ - [`acquire_pos_rs.py`](camera/src/acquire_pos_rs.py): uses the **RealSense** camera to acquire the position (x, y, z) of the object and the factory area. Publishes the position to the `'obj_pos'` ROS topic.
    
- - [`acquire_pos_zed.py`](camera/src/acquire_pos_zed.py)  
-   Uses the **ZED** camera to acquire the position (x, y, z) of the object and factory. Publishes the position to the `'obj_pos'` ROS topic.
+ - [`acquire_pos_zed.py`](camera/src/acquire_pos_zed.py): uses the **ZED** camera to acquire the position (x, y, z) of the object and factory. Publishes the position to the `'obj_pos'` ROS topic.
    
- - [`pick_n_place_rs.py`](pick_n_place/src/pick_n_place_rs.py)  
-   Controls the Shadow Hand and UR5 arm to perform pick-and-place operations based on the **RealSense** camera's object position.
+ - [`pick_n_place_rs.py`](pick_n_place/src/pick_n_place_rs.py): controls the Shadow Hand and UR5 arm to perform pick-and-place operations based on the **RealSense** camera's object position.
  
- - [`pick_n_place_zed.py`](pick_n_place/src/pick_n_place_zed.py)  
-   Controls the Shadow Hand and UR5 arm to perform pick-and-place operations using the **ZED** camera's object position.
+ - [`pick_n_place_zed.py`](pick_n_place/src/pick_n_place_zed.py): controls the Shadow Hand and UR5 arm to perform pick-and-place operations using the **ZED** camera's object position.
 
 
 ## 🚀 How to Run
