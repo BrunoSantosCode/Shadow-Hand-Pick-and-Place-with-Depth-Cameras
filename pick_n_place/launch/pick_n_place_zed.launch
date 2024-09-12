@@ -1,0 +1,3 @@
+<launch>
+    <node name="pick_n_place_zed" pkg="pick_n_place" type="pick_n_place_zed.py" output="screen" />
+</launch>
