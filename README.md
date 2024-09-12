@@ -76,7 +76,7 @@ A detailed explanation of the project, methodologies, and results will be availa
     
 ## 📫 Contact
 
-Developed by Bruno Santos
+Developed by Bruno Santos in DIGI2 Lab
 
 Feel free to reach out via email: brunosantos@fe.up.pt
 
