@@ -1,0 +1,3 @@
+<launch>
+    <node name="acquire_pos_zed" pkg="camera" type="acquire_pos_zed.py" output="screen" />
+</launch>

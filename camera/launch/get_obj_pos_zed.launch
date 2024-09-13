@@ -1,3 +1,0 @@
-<launch>
-    <node name="get_obj_pos_zed" pkg="camera" type="get_obj_pos_zed.py" output="screen" />
-</launch>

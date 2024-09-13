@@ -1,0 +1,3 @@
+<launch>
+    <node name="acquire_pos_rs" pkg="camera" type="acquire_pos_rs.py" output="screen" />
+</launch>

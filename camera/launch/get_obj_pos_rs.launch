@@ -1,3 +1,0 @@
-<launch>
-    <node name="get_obj_pos_rs" pkg="camera" type="get_obj_pos_rs.py" output="screen" />
-</launch>
