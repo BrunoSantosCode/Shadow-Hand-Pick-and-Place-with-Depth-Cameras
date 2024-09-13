@@ -1,6 +1,6 @@
-# ZED ROS Noetic Docker Container
+# CAMERA Container
 
-Here are the necessary files in order to run a Docker container specific for ZED camera with ROS Noetic.
+Here are the necessary files in order to run a Docker container specific for the cameras with ROS Noetic.
 <br>
 
 ## Prerequisites
@@ -39,16 +39,16 @@ Here are the necessary files in order to run a Docker container specific for ZED
     ```
 <br>
 
-## Install ZED Docker Container
+## Install CAMERA Docker Container
 
-1. Open a new terminal and navigate to the [ZED_Docker](/ZED_Docker) directory
+1. Open a new terminal and navigate to the [camera_docker](/camera_docker) directory
 
-2. Build the provided [Dockerfile](/ZED_Docker/Dockerfile)
+2. Build the provided [Dockerfile](/camera_docker/Dockerfile)
     ```bash
       docker build -t camera:v1.0 .
     ```
 
-3. Create and start the ZED Docker Container
+3. Create and start the CAMERA Docker Container
     ```bash
        ./create_camera_container.sh
     ```
