@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=CAMERA Container
+Comment=open CAMERA container
+Exec=terminator -T 'CAMERA Container' -e ~/.shadow_launcher_app_dexterous_hand/shadow_hand_launcher/start_camera_container.sh
+Icon=/home/user/.shadow_launcher_app_dexterous_hand/shadow_hand_launcher/zed_2i.png
+Terminal=false
+Type=Application
+Categories=Utility;Application;
+GenericName[en_GB]=CAMERA Container
