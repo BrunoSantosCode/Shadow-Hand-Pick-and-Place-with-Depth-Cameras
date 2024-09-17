@@ -67,7 +67,7 @@ Follow these steps to run the pick-and-place system using the **RealSense** came
     
 ### 🟢 Running with ZED
 
-To run the system with the **ZED** camera, follow the same steps as for RealSense but replace the scripts:
+To run the system with the **ZED** camera, follow the same steps as for RealSense but:
  - Replace `pick_n_place_rs.py` by `pick_n_place_zed.py`
  - Replace `acquire_pos_rs.py` by `acquire_pos_zed.py`
 
