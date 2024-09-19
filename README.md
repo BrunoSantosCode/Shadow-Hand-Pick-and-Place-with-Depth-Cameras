@@ -10,7 +10,7 @@ The project leverages depth cameras (RealSense and ZED) to control the Shadow De
  - **Cameras**: RealSense D456, ZED v1
  - **Development Environment**: ROS, Docker
 
-### 🎥 Watch the Robots in Action
+## 🎥 Watch the Robots in Action
  To see the real robots performing the pick-and-place task, check out the **YouTube demo video**:  
  [Watch the video here](https://youtu.be/iXZW1xC6DWg)
 
