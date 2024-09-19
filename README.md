@@ -8,7 +8,7 @@ The project leverages depth cameras (RealSense and ZED) to control the Shadow De
  - **Robotic Hand**: Shadow Dexterous Hand
  - **Robot Arm**: UR5 (Universal Robots)
  - **Cameras**: RealSense D456, ZED v1
- - **Development Environment**: ROS, Docker
+ - **Development Environment**: ROS noetic, Docker
 
 ## 🎥 Watch the Robots in Action
  To see the real robots performing the pick-and-place task, check out the **YouTube demo video**:  
