@@ -72,7 +72,7 @@ To run the system with the **ZED** camera, follow the same steps as for RealSens
  - Replace `acquire_pos_rs.py` by `acquire_pos_zed.py`
 
 ## 📄 Research Paper
-A detailed explanation of the project, methodologies, and results will be available in an upcoming paper, which is currently TO BE PUBLISHED. Stay tuned for updates!
+[Paper](https://ieeexplore.ieee.org/document/10843923)
     
 ## 📫 Contact
 
